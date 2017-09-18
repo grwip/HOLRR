@@ -20,14 +20,14 @@ for xp in ['linear', 'kernel']:
 
     if xp == 'linear':
         X,Y,X_test,Y_test,_ = linear_data_tucker(dim_in=[10],
-                                                 dim_out=[10,10,10],
+                                                 dim_out=[10,10],
                                                  ranks=[4,6,2],
                                                  N_train=20,
                                                  N_test=500,
                                                  noise=0.1)
     else:
         X, Y, X_test, Y_test, _  =  poly_data_tucker(dim_in=[10],
-                                                     dim_out=[10, 10, 10],
+                                                     dim_out=[10, 10],
                                                      ranks=[4, 6, 2],
                                                      N_train=50,
                                                      N_test=500,
